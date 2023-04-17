@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selling Services</title>
+  <style>
+    body {
+      background-color: rgb(185, 236, 178);
+    }
+
+    .btmnav {
+      margin-top: 50vh;
+      width: 100%;
+      height: 20vh;
+      background-color: #333;
+    }
+
+    .btmnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    #logo {
+      float: right;
+      margin-right: 40px;
+      padding: 10px;
+      width: 40px;
+      border: 2px solid balck;
+      border-radius: 20px;
+    }
+
+    .menu-bar {
+      background-color: rgb(17, 19, 17);
+      text-align: center;
+      height: 10vh;
+    }
+
+    .menu-bar ul {
+      display: inline-flex;
+      list-style: none;
+      color: #fff;
+    }
+
+    .menu-bar ul li {
+      width: 120px;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    .menu-bar ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .active,
+    .menu-bar ul li:hover {
+      background: #35755b;
+      border-radius: 3px;
+    }
+
+    .sub-menu-1 {
+      display: none;
+    }
+
+    .menu-bar ul li:hover .sub-menu-1 {
+      display: block;
+      position: absolute;
+      background: rgb(42, 49, 42);
+      border-radius: 10px;
+      margin-top: 10px;
+      margin-left: -15px;
+    }
+
+    .menu-bar ul li:hover .sub-menu-1 ul {
+      display: block;
+      margin: 10px;
+    }
+
+    .menu-bar ul li:hover .sub-menu-1 ul li {
+      width: 100px;
+      padding: 10px;
+      border-bottom: 1px dotted #fff;
+      background: transparent;
+      border-radius: 0;
+      text-align: left;
+    }
+
+    .menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+      border-bottom: none;
+    }
+
+    .menu-bar ul li:hover .sub-menu-1 ul a:hover {
+      color: #b2ff00;
+    }
+
+    .fa-angle-right {
+      float: right;
+    }
+
+    .sub-menu-2 {
+      display: none;
+    }
+
+    .menu-bar ul li:hover .sub-menu-2 {
+      display: block;
+      position: absolute;
+      background: rgb(42, 49, 42);
+      border-radius: 10px;
+      margin-top: 10px;
+      margin-left: -15px;
+    }
+
+    .menu-bar ul li:hover .sub-menu-2 ul {
+      display: block;
+      margin: 10px;
+    }
+
+    .menu-bar ul li:hover .sub-menu-2 ul li {
+      width: 120px;
+      padding: 10px;
+      border-bottom: 1px dotted #fff;
+      background: transparent;
+      border-radius: 0;
+      text-align: left;
+    }
+
+    .menu-bar ul li:hover .sub-menu-2 ul li:last-child {
+      border-bottom: none;
+    }
+
+    .menu-bar ul li:hover .sub-menu-2 ul a:hover {
+      color: #b2ff00;
+    }
+
+    .btn {
+      height: 15vh;
+      width: 100vw;
+      justify-content: center;
+    }
+
+    #btn {
+      margin-left: 50px;
+      background-color: rgb(158, 180, 245);
+      width: 140px;
+      height: 30px;
+      color: black;
+    }
+
+    #btn:hover {
+      background-color: #35755b;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-bar">
+    <ul>
+      <li class="active"><a href="homes">Home</a></li>
+      <!-- ------------------------------------------------------------ -->
+      <!-- <li><a href="Major_Crop">Major Crops</a>
+          <div class="sub-menu-1">
+              <ul>
+                  <li><a href="AboutRice">Rice</a></li>
+                  <li><a href="AboutPulses">Pulses</a></li>
+                  <li><a href="AboutJute">Jute</a></li>
+                  <li><a href="AboutMaize">Maize</a></li>
+                  <li><a href="AboutSugarcane">Sugarcane</a></li>
+                  <li><a href="#">Wheat</a></li>
+              </ul>
+          </div>
+          </li> -->
+      <li><a href="#">Major Crops</a>
+        <div class="sub-menu-1">
+          <ul>
+            <li><a href="AboutRice">Rice</a></li>
+            <li><a href="AboutPulses">Pulses</a></li>
+            <li><a href="AboutJute">Jute</a></li>
+            <li><a href="AboutMaize">Maize</a></li>
+            <li><a href="AboutSugarcane">Sugarcane</a></li>
+            <li><a href="AboutWheat">Wheat</a></li>
+          </ul>
+        </div>
+      </li>
+      <!-- ----------------------------------------------------------------------------------------------- -->
+      <li><a href="#">Services</a>
+        <div class="sub-menu-1">
+          <ul>
+            <li><a href="Nutrient_Management">Nutrient Management</a></li>
+            <li><a href="Soil_testing">Soil Testing</a></li>
+            <li class="hover-me"><a href="Selling">Selling Services </a><i class="fa fa-angle-right"></i></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="Schemes">Schemes</a></li>
+      <li><a href="Loans">Loans</a></li>
+      <li><a href="#">Prediction</a>
+        <div class="sub-menu-2">
+          <ul>
+            <li><a href="yield_pred">Crop Yield Prediction</a></li>
+            <li class="hover-me"><a href="prediction">Crop Recommendation</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <h2 style="text-align:center;">National Agriculture Market</h2>
+  <p>
+    National Agriculture Market (NAM) is a pan-India electronic trading portal which networks the existing APMC mandis
+    to create a unified national market for agricultural commodities.
+
+    The NAM Portal provides a single window service for all APMC related information and services. This includes
+    commodity arrivals & prices, buy & sell trade offers, provision to respond to trade offers, among other services.
+    While material flow (agriculture produce) continue to happen through mandis, an online market reduces transaction
+    costs and information asymmetry.
+
+    Agriculture marketing is administered by the States as per their agri-marketing regulations, under which, the State
+    is divided into several market areas, each of which is administered by a separate Agricultural Produce Marketing
+    Committee (APMC) which imposes its own marketing regulation (including fees). This fragmentation of markets, even
+    within the State, hinders free flow of agri commodities from one market area to another and multiple handling of
+    agri-produce and multiple levels of mandi charges ends up escalating the prices for the consumers without
+    commensurate benefit to the farmer.
+
+    NAM addresses these challenges by creating a unified market through online trading platform, both, at State and
+    National level and promotes uniformity, streamlining of procedures across the integrated markets, removes
+    information asymmetry between buyers and sellers and promotes real time price discovery, based on actual demand and
+    supply, promotes transparency in auction process, and access to a nationwide market for the farmer, with prices
+    commensurate with quality of his produce and online payment and availability of better quality produce and at more
+    reasonable prices to the consumer.
+  </p>
+  <h2 style="text-align: center;">Objectives of NAM</h2>
+  <li>
+    A national e-market platform for transparent sale transactions and price discovery initially in regulated markets.
+    Willing States to accordingly enact suitable provisions in their APMC Act for promotion of e-trading by their State
+    Agricultural Marketing Board/APMC.
+  </li>
+  <li>
+    Liberal licensing of traders / buyers and commission agents by State authorities without any pre-condition of
+    physical presence or possession of shop /premises in the market yard.
+  </li>
+  <li>
+    One license for a trader valid across all markets in the State.
+  </li>
+  <li>
+    Harmonisation of quality standards of agricultural produce and provision for assaying (quality testing)
+    infrastructure in every market to enable informed bidding by buyers. Common tradable parameters have so far been
+    developed for 69 commodities.
+  </li>
+  <li>
+    Single point levy of market fees, i.e on the first wholesale purchase from the farmer.
+  </li>
+  <li>
+    Provision of Soil Testing Laboratories in/ or near the selected mandi to facilitate visiting farmers to access this
+    facility in the mandi itself. M/s. Nagarjuna Fertilizers and Chemicals Ltd. is the Strategic Partner (SP) who is
+    responsible for development, operation and maintenance of the platform. The broad role of the Strategic Partner is
+    comprehensive and includes writing of the software, customizing it to meet the specific requirements of the mandis
+    in the States willing to integrate with NAM and running the platform
+  </li>
+  <br><br>
+  <div class="btn">
+    <button id="btn"><a href="https://enam.gov.in/NAMV2/faces/infrastructure/SLogin.jsf">ENam Login</a></button>
+    <button id="btn"><a href="https://enam.gov.in/web/Enam_ctrl/enam_registration">ENam Register</a></button>
+  </div>
+
+
+
+  <div class="btmnav">
+    <a href="About_us">About_us</a>
+    <a href="contact">Contact us</a>
+    <div id="btmlogo">
+      <a href="https://www.facebook.com/agriGoI/" class="href">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEU7V53///8gRZUyUZrn6vKKl785VZxAW6Dh5O5yg7QmSZbR1uUxUJojR5Y2U5vx8vdbcKqyutSXosVidq3a3urM0uPCyd6ps9B7i7n09vrx9Pm4wNikrs1MZKRYbqp/j7tqfbGapsiPnMIAMY0VP5JdM9iBAAAD+UlEQVR4nO3dbVOjMBSG4fDSUEISXtRatta67v7/37hF7eiMs5iKyTmHee4Zx08i13RIhACq7K1mqCu1lqp6aC4w9fqtr5z1mnrHfiztrav6D8K2M+vRXdKmay/CsiiodydKRVG+ClvrqfclUt62L8JunZ/gVNFNwt5Q70fETH8WVusbZN7TVaYaR70XUXONGiz1TkTNDqpe60D6mq/Vqg/D6UCk3gOEEEIIIYQQQgghhMjz1hr3ofz8ZZwxxlpbFFr2NUJ9tvmbzf2u2ZbjmGXZOI6/2rLc3jZ3u0P/MGz2N0dtnZPJ9NYdN7sy+7p2q+QRtc0f70N0b0vY0tLGDuE8eUJtdH8NT5zQ2vsrfbKEOj+NVwMlCQvffO2RLDRP3/EJEubD94BihPm1Q6g0Yb77LlCIcAFQhtBdPwvKEprNAqAEoX9cAhQg1KZdudB9e54QIvTdMiB/Yb5dubA4LQSyF7qrzucFCpd/hNyFi49C7kK9dCBlLzSH1QuXA3kLi/3ahWbBaaEMoVv2Nzd/4cLTJgFC+3ydpd3eNp+65bz2dMVhOB5ORzstjX6OMVC50D9otntnJK74ahsIHHKhDw/qYxjwRuyzg0UdBKzlPncWNpQeBD86GLYaKvQQfCnoxOIg9iA8Z+4ChE+Sn410IUu+Vt4s+F7IhL8VPM6ECXeSD0OVB1xIvJc7Gaow4e/VC59XL9xInvAhhFBAEELIPwgh5B+EEPIPQgj5ByGE/INQhlD/vzChndnCy1aoq2YyIUI9t4UpWqMPW+VdUkl72T9wHXtJd6sX9rQXxRMIid+fm0C4p51OEggfaVfBEwiJl/njC0fiVfD4Qup1/vhC6nX++ELqdf74QupV8PhC6lum4guPxKdP8YXUd3lHF7bUN4VFF96uXkg9HcYXPlDfMhVdSH4pLrrwhvoO4uhC8v+uEls4Ug800YUl9WQRXdis/jOkfxgjtpD+HunYwj31ZBFd2FFPFtGF1L7oQvrpMLaQ+lJifCHxytqUfyq3MwUg5n6+JD93mohupj8Bq9ynvzMbYACcbx33YswFIYT8gxBC/kEIIf8ghJB/EELIPwgh5B+EEPIPQgj5ByGE/IMQQv5BCCH/IISQfxBCyD8IIeQfhBDyD0II+QchhPyDEEL+QQgh/yCEkH8QQsg/CCHkH4QQ8g9CCPmXUEj01rNUQl2pmuZlRKmEvlZE76ZPJbSDamjeZJNK6BpF9PrBREJdZSrrSV7Wk0ho+rMw6yimnTTCossmYWsJhtMkQm/bF2FW2vSfYgphYadfMgmztkv+auz4Qm26NrsIs6yvnPUplXGF2ltX9a9bUZfNNUNd/SThi+IKq3poLlv5B3kiS8fmdy97AAAAAElFTkSuQmCC"
+          alt="" id="logo">
+      </a>
+      <a href="https://www.instagram.com/agrigoi/?hl=en" class="href">
+        <img
+          src="https://hindubabynames.info/downloads/wp-content/themes/hbn_download/download/social-media/instagram-logo.png"
+          alt="" id="logo">
+      </a>
+
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" id="logo">
+      <img src="" alt="">
+    </div>
+  </div>
+</body>
+
+</html>

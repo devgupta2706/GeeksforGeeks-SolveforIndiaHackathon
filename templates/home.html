@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* background:linear-gradient(rgba(9, 13, 27, 0.7),rgba(9, 13, 27, 0.7)),url("./images/back3.jpg"); */
+
+            background-image: linear-gradient(rgba(9, 13, 27, 0.7), rgba(9, 13, 27, 0.7)), url('https://images.unsplash.com/photo-1620200423727-8127f75d7f53?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            font-family: sans-serif;
+
+        }
+
+        .menu-bar {
+            background-color: rgb(17, 19, 17);
+            text-align: center;
+            height: 10vh;
+        }
+
+        .menu-bar ul {
+            display: inline-flex;
+            list-style: none;
+            color: #fff;
+        }
+
+        .menu-bar ul li {
+            width: 120px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .menu-bar ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .active,
+        .menu-bar ul li:hover {
+            background: #35755b;
+            border-radius: 3px;
+        }
+
+        .sub-menu-1 {
+            display: none;
+        }
+
+        .menu-bar ul li:hover .sub-menu-1 {
+            display: block;
+            position: absolute;
+            background: rgb(42, 49, 42);
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-left: -15px;
+        }
+
+        .menu-bar ul li:hover .sub-menu-1 ul {
+            display: block;
+            margin: 10px;
+        }
+
+        .menu-bar ul li:hover .sub-menu-1 ul li {
+            width: 100px;
+            padding: 10px;
+            border-bottom: 1px dotted #fff;
+            background: transparent;
+            border-radius: 0;
+            text-align: left;
+        }
+
+        .menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+            border-bottom: none;
+        }
+
+        .menu-bar ul li:hover .sub-menu-1 ul a:hover {
+            color: #b2ff00;
+        }
+
+        .fa-angle-right {
+            float: right;
+        }
+
+
+        .btmnav {
+            margin-top: 50vh;
+            width: 100%;
+            height: 20vh;
+            background-color: #333;
+        }
+
+        .btmnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        #logo {
+            float: right;
+            margin-right: 40px;
+            padding: 10px;
+            width: 40px;
+            border: 2px solid balck;
+            border-radius: 20px;
+        }
+
+        p {
+            text-align: center;
+            color: wheat;
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        #dis {
+            margin-top: 150px;
+        }
+
+
+
+
+        .sub-menu-2 {
+            display: none;
+        }
+
+        .menu-bar ul li:hover .sub-menu-2 {
+            display: block;
+            position: absolute;
+            background: rgb(42, 49, 42);
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-left: -15px;
+        }
+
+        .menu-bar ul li:hover .sub-menu-2 ul {
+            display: block;
+            margin: 10px;
+        }
+
+        .menu-bar ul li:hover .sub-menu-2 ul li {
+            width: 120px;
+            padding: 10px;
+            border-bottom: 1px dotted #fff;
+            background: transparent;
+            border-radius: 0;
+            text-align: left;
+        }
+
+        .menu-bar ul li:hover .sub-menu-2 ul li:last-child {
+            border-bottom: none;
+        }
+
+        .menu-bar ul li:hover .sub-menu-2 ul a:hover {
+            color: #b2ff00;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- ---------------------------------------------------------------------------------------------- -->
+    <div class="menu-bar">
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <!-- ------------------------------------------------------------ -->
+            <li><a href="#">Major Crops</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="AboutRice">Rice</a></li>
+                        <li><a href="AboutPulses">Pulses</a></li>
+                        <li><a href="AboutJute">Jute</a></li>
+                        <li><a href="AboutMaize">Maize</a></li>
+                        <li><a href="AboutSugarcane">Sugarcane</a></li>
+                        <li><a href="AboutWheat">Wheat</a></li>
+                    </ul>
+                </div>
+            </li>
+            <!-- ----------------------------------------------------------------------------------------------- -->
+            <li><a href="#">Services</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="Nutrient_Management">Nutrient Management</a></li>
+                        <li><a href="Soil_testing">Soil Testing</a></li>
+                        <li class="hover-me"><a href="Selling">Selling Services </a><i class="fa fa-angle-right"></i>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!-- <li><a href="#">Storage</a></li> -->
+            <li><a href="Schemes">Schemes</a></li>
+            <li><a href="Loans">Loans</a></li>
+            <li><a href="#">Prediction</a>
+                <div class="sub-menu-2">
+                    <ul>
+                        <li><a href="yield_pred">Crop Yield Prediction</a></li>
+                        <li class="hover-me"><a href="prediction">Crop Recommendation</a></li>
+                    </ul>
+                </div>
+            </li>
+            <!-- <li><a href="/templates/contact.html">Contact us</a></li>
+        <li><a href="/templates/About_us.html">About us</a></li> -->
+        </ul>
+    </div>
+    <p id="dis"></p>
+    <p>WELCOME TO FARMER PORTAL</p>
+
+    <div class="btmnav">
+        <a href="About_us">About_us</a>
+        <a href="contact">Contact us</a>
+        <div id="btmlogo">
+            <a href="https://www.facebook.com/agriGoI/" class="href">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEU7V53///8gRZUyUZrn6vKKl785VZxAW6Dh5O5yg7QmSZbR1uUxUJojR5Y2U5vx8vdbcKqyutSXosVidq3a3urM0uPCyd6ps9B7i7n09vrx9Pm4wNikrs1MZKRYbqp/j7tqfbGapsiPnMIAMY0VP5JdM9iBAAAD+UlEQVR4nO3dbVOjMBSG4fDSUEISXtRatta67v7/37hF7eiMs5iKyTmHee4Zx08i13RIhACq7K1mqCu1lqp6aC4w9fqtr5z1mnrHfiztrav6D8K2M+vRXdKmay/CsiiodydKRVG+ClvrqfclUt62L8JunZ/gVNFNwt5Q70fETH8WVusbZN7TVaYaR70XUXONGiz1TkTNDqpe60D6mq/Vqg/D6UCk3gOEEEIIIYQQQgghhMjz1hr3ofz8ZZwxxlpbFFr2NUJ9tvmbzf2u2ZbjmGXZOI6/2rLc3jZ3u0P/MGz2N0dtnZPJ9NYdN7sy+7p2q+QRtc0f70N0b0vY0tLGDuE8eUJtdH8NT5zQ2vsrfbKEOj+NVwMlCQvffO2RLDRP3/EJEubD94BihPm1Q6g0Yb77LlCIcAFQhtBdPwvKEprNAqAEoX9cAhQg1KZdudB9e54QIvTdMiB/Yb5dubA4LQSyF7qrzucFCpd/hNyFi49C7kK9dCBlLzSH1QuXA3kLi/3ahWbBaaEMoVv2Nzd/4cLTJgFC+3ydpd3eNp+65bz2dMVhOB5ORzstjX6OMVC50D9otntnJK74ahsIHHKhDw/qYxjwRuyzg0UdBKzlPncWNpQeBD86GLYaKvQQfCnoxOIg9iA8Z+4ChE+Sn410IUu+Vt4s+F7IhL8VPM6ECXeSD0OVB1xIvJc7Gaow4e/VC59XL9xInvAhhFBAEELIPwgh5B+EEPIPQgj5ByGE/INQhlD/vzChndnCy1aoq2YyIUI9t4UpWqMPW+VdUkl72T9wHXtJd6sX9rQXxRMIid+fm0C4p51OEggfaVfBEwiJl/njC0fiVfD4Qup1/vhC6nX++ELqdf74QupV8PhC6lum4guPxKdP8YXUd3lHF7bUN4VFF96uXkg9HcYXPlDfMhVdSH4pLrrwhvoO4uhC8v+uEls4Ug800YUl9WQRXdis/jOkfxgjtpD+HunYwj31ZBFd2FFPFtGF1L7oQvrpMLaQ+lJifCHxytqUfyq3MwUg5n6+JD93mohupj8Bq9ynvzMbYACcbx33YswFIYT8gxBC/kEIIf8ghJB/EELIPwgh5B+EEPIPQgj5ByGE/IMQQv5BCCH/IISQfxBCyD8IIeQfhBDyD0II+QchhPyDEEL+QQgh/yCEkH8QQsg/CCHkH4QQ8g9CCPmXUEj01rNUQl2pmuZlRKmEvlZE76ZPJbSDamjeZJNK6BpF9PrBREJdZSrrSV7Wk0ho+rMw6yimnTTCossmYWsJhtMkQm/bF2FW2vSfYgphYadfMgmztkv+auz4Qm26NrsIs6yvnPUplXGF2ltX9a9bUZfNNUNd/SThi+IKq3poLlv5B3kiS8fmdy97AAAAAElFTkSuQmCC"
+                    alt="" id="logo">
+            </a>
+            <a href="https://www.instagram.com/agrigoi/?hl=en" class="href">
+                <img src="https://hindubabynames.info/downloads/wp-content/themes/hbn_download/download/social-media/instagram-logo.png"
+                    alt="" id="logo">
+            </a>
+
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" id="logo">
+            <img src="" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
